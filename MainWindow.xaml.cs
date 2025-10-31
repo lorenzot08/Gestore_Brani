@@ -20,5 +20,30 @@ namespace Gestore_Brani_CD
         {
             InitializeComponent();
         }
+
+        Brano b;
+
+        private void bnt_creaBrano_Click(object sender, RoutedEventArgs e)
+        {
+             b = new Brano(txt_Titolo.Text, txt_Autore.Text, txt_Durata.Text);
+        }
+
+        private void btn_StampaDati_Click(object sender, RoutedEventArgs e)
+        {
+            lbl_StampaDati.Content = b.ToString();
+        }
+
+        private void btn_ShortSong_Click(object sender, RoutedEventArgs e, int durata)
+        {
+            
+            if()
+            {
+
+            }
+            else
+            {
+
+            }
+        }
     }
 }

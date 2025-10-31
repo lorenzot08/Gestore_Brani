@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="bnt_creaBrano" Content="crea brano" Click="bnt_creaBrano_Click" Margin="60,31,614,330"/>
+
+        <TextBox x:Name="txt_Titolo" TextWrapping="Wrap" Margin="84,129,614,260" BorderBrush="Black" BorderThickness="1"/>
+        <Label x:Name="lbl_Titolo" Content="Titolo:" HorizontalAlignment="Left" Margin="22,142,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txt_Autore" TextWrapping="Wrap" Margin="84,194,614,194" BorderBrush="Black" BorderThickness="1"/>
+        <Label x:Name="lbl_Autore" Content="Autore:" HorizontalAlignment="Left" Margin="16,0,0,0" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="txt_Durata" TextWrapping="Wrap" Margin="84,266,614,116" BorderBrush="Black" BorderThickness="1"/>
+        <Label x:Name="lbl_Durata" Content="Durata:" HorizontalAlignment="Left" Margin="17,274,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="btn_StampaDati" Content="Stampa dati" Margin="292,31,346,324" Click="btn_StampaDati_Click"/>
+        <Label x:Name="lbl_StampaDati" Content="" HorizontalAlignment="Left" Margin="307,129,0,0" VerticalAlignment="Top" Height="51" Width="93" BorderBrush="Black" BorderThickness="1"/>
+
+        <Button x:Name="btn_ShortSong" Content="short song" HorizontalAlignment="Left" Margin="599,34,0,0" VerticalAlignment="Top" Height="76" Width="116" Click="btn_ShortSong_Click"/>
+        <TextBox x:Name="txt_shortSong" HorizontalAlignment="Left" Margin="604,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" BorderBrush="Black" BorderThickness="1" Height="71"/>
+
 
     </Grid>
 </Window>
