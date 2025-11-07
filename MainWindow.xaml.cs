@@ -36,14 +36,6 @@ namespace Gestore_Brani_CD
         private void btn_ShortSong_Click(object sender, RoutedEventArgs e, int durata)
         {
             
-            if()
-            {
-
-            }
-            else
-            {
-
-            }
         }
     }
 }

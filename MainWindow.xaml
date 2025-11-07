@@ -7,22 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="bnt_creaBrano" Content="crea brano" Click="bnt_creaBrano_Click" Margin="60,31,614,330"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-        <TextBox x:Name="txt_Titolo" TextWrapping="Wrap" Margin="84,129,614,260" BorderBrush="Black" BorderThickness="1"/>
-        <Label x:Name="lbl_Titolo" Content="Titolo:" HorizontalAlignment="Left" Margin="22,142,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="bnt_creaBrano" Content="crea brano" Click="bnt_creaBrano_Click" Margin="36,308,604,66"/>
 
-        <TextBox x:Name="txt_Autore" TextWrapping="Wrap" Margin="84,194,614,194" BorderBrush="Black" BorderThickness="1"/>
-        <Label x:Name="lbl_Autore" Content="Autore:" HorizontalAlignment="Left" Margin="16,0,0,0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txt_Titolo" TextWrapping="Wrap" Margin="84,46,614,343" BorderBrush="Black" BorderThickness="1"/>
+        <Label x:Name="lbl_Titolo" Content="Titolo:" HorizontalAlignment="Left" Margin="36,56,0,0" VerticalAlignment="Top"/>
 
-        <TextBox x:Name="txt_Durata" TextWrapping="Wrap" Margin="84,266,614,116" BorderBrush="Black" BorderThickness="1"/>
-        <Label x:Name="lbl_Durata" Content="Durata:" HorizontalAlignment="Left" Margin="17,274,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Autore" TextWrapping="Wrap" Margin="84,129,614,259" BorderBrush="Black" BorderThickness="1" Height="30"/>
+        <Label x:Name="lbl_Autore" Content="Autore:" HorizontalAlignment="Left" Margin="30,139,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="btn_StampaDati" Content="Stampa dati" Margin="292,31,346,324" Click="btn_StampaDati_Click"/>
-        <Label x:Name="lbl_StampaDati" Content="" HorizontalAlignment="Left" Margin="307,129,0,0" VerticalAlignment="Top" Height="51" Width="93" BorderBrush="Black" BorderThickness="1"/>
+        <TextBox x:Name="txt_Durata" TextWrapping="Wrap" Margin="84,217,614,165" BorderBrush="Black" BorderThickness="1"/>
+        <Label x:Name="lbl_Durata" Content="Durata:" HorizontalAlignment="Left" Margin="30,230,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="btn_ShortSong" Content="short song" HorizontalAlignment="Left" Margin="599,34,0,0" VerticalAlignment="Top" Height="76" Width="116" Click="btn_ShortSong_Click"/>
-        <TextBox x:Name="txt_shortSong" HorizontalAlignment="Left" Margin="604,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" BorderBrush="Black" BorderThickness="1" Height="71"/>
+        <Button x:Name="btn_StampaDati" Content="Stampa dati" Margin="327,31,165,343" Click="btn_StampaDati_Click"/>
+        <Label x:Name="lbl_StampaDati" Content="" HorizontalAlignment="Left" Margin="327,110,0,0" VerticalAlignment="Top" Height="107" Width="308" BorderBrush="Black" BorderThickness="1"/>
+
+        <Button x:Name="btn_ShortSong" Content="short song" HorizontalAlignment="Left" Margin="327,254,0,0" VerticalAlignment="Top" Height="64" Width="189" Click="btn_ShortSong_Click"/>
+        <TextBox x:Name="txt_shortSong" HorizontalAlignment="Left" Margin="327,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" BorderBrush="Black" BorderThickness="1" Height="57"/>
 
 
     </Grid>
