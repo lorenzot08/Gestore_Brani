@@ -18,22 +18,16 @@ namespace Gestore_Brani_CD
             _autore = autore;
             _brani = new List<Brano>();
         }
-        public string getTitolo()
-        {
-            return _titolo;
+        public string Titolo { 
+            get { return _titolo; }
+            set { _titolo = value; } 
         }
-        public void setTitolo(string titolo)
-        {
-            _titolo = titolo;
+        
+        public string Autore { 
+            get { return _autore; }
+            set {  _autore = value; }
         }
-        public string getAutore()
-        {
-            return _autore;
-        }
-        public void setAutore(string autore)
-        {
-            _autore = autore;
-        }
+    
         public void AggiungiBrano(Brano br)
         {
             _brani.Add(br);
